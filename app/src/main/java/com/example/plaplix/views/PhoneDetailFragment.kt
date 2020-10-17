@@ -43,7 +43,7 @@ class PhoneDetailFragment : Fragment() {
         viewmodelP.getPhoneDetail(param1).observe(viewLifecycleOwner,{
             if(it!=null){
                 detail_phone_name.text=it.name
-                Picasso.get().load(it.image).resize(500,500).centerCrop().into(detail_phone_image)
+                Picasso.get().load(it.image).placeholder(R.drawable.ic_launcher_foreground).resize(500,500).centerCrop().into(detail_phone_image)
                 val formattedPrice=String.format("%,d",it.price).replace(',','.')
                 val formattedLastPrice=String.format("%,d",it.lastPrice).replace(',','.')
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {

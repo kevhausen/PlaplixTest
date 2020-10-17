@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity(),NavigationHost {
 
         navigateTo(PhoneListFragment.newInstance(),false)
 
-
-
     }
 
     override fun navigateTo(fragment: Fragment, boolean: Boolean) {

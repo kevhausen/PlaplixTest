@@ -13,7 +13,7 @@
         android:layout_marginTop="64dp"
         android:textStyle="bold"
         android:textAllCaps="true"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textAlignment="center"
         android:text="@string/dummy_samsumg_galaxy_s9_120gb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,9 +113,11 @@
 
     <RelativeLayout
         android:id="@+id/detailRelativeLayout"
-        android:layout_width="197dp"
-        android:layout_height="46dp"
+        android:layout_width="212dp"
+        android:layout_height="27dp"
         android:layout_marginTop="16dp"
+        android:background="@color/primary_light"
+        android:backgroundTint="@color/primary"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,10 +128,10 @@
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/textView13"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/ic_mail"
-            android:contentDescription="@string/mail_icon"/>
+            android:layout_toEndOf="@id/textView13"
+            android:contentDescription="@string/mail_icon"
+            app:srcCompat="@drawable/ic_mail" />
 
         <TextView
             android:id="@+id/textView13"
@@ -137,6 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
             android:text="@string/contactar_area_de_ventas"
 
             android:textStyle="bold" />
