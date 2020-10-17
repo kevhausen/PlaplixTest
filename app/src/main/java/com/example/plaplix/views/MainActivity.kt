@@ -10,7 +10,6 @@ import com.example.plaplix.viewmodel.ViewModelP
 
 class MainActivity : AppCompatActivity(),NavigationHost {
 
-    private lateinit var plaplixViewModel:ViewModelP
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
