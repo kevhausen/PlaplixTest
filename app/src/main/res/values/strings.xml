@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Plaplix</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="samsung_galaxy">Samsung Galaxy P20 256GB</string>
+    <string name="_419990">419990</string>
+    <string name="phone_image">Phone Image</string>
+    <string name="price">&lt;b>$&lt;/b> %1$s</string>
+    <string name="dummy_samsumg_galaxy_s9_120gb">Dummy: Samsumg Galaxy S9 120GB</string>
+    <string name="antes_117_225">Antes: $117.225</string>
+    <string name="ahora_78_667">ahora: $78.667</string>
+    <string name="acepta_credito">Acepta Credito</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="contactar_area_de_ventas">Contactar Area de Ventas</string>
+    <string name="last_price_string">Antes $%1$s</string>
+    <string name="actual_price_string">&lt;b>Ahora&lt;/b> $%1$s</string>
+    <string name="credit_card_icon">credit card icon</string>
+    <string name="mail_icon">mail icon</string>
 </resources>
