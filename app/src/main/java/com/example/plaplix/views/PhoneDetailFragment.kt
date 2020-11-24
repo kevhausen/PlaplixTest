@@ -1,14 +1,12 @@
 package com.example.plaplix.views
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.plaplix.R
 import com.example.plaplix.clickAnimation
@@ -42,7 +40,9 @@ class PhoneDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewmodelP.insertWebDetailDataIntoDB(param1)
         viewmodelP.getPhoneDetail(param1).observe(viewLifecycleOwner,{
-            setPhoneDetails(it)
+            if(it!=null){
+                setPhoneDetails(it)
+            }
         })
     }
 
@@ -58,7 +58,6 @@ class PhoneDetailFragment : Fragment() {
     }
 
     private fun setPhoneDetails(phoneDetail:PhoneDetail){
-        if(phoneDetail!=null){
             detail_phone_name.text=phoneDetail.name
             Picasso.get().load(phoneDetail.image).placeholder(R.drawable.ic_launcher_foreground).resize(500,500).centerCrop().into(detail_phone_image)
             val formattedPrice=String.format("%,d",phoneDetail.price).replace(',','.')
@@ -90,6 +89,5 @@ class PhoneDetailFragment : Fragment() {
                 startActivity(Intent.createChooser(intent,"Contactar Area de Ventas:"))
 
             }
-        }
     }
 }

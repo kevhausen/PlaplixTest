@@ -24,12 +24,12 @@
         android:id="@+id/detail_phone_image"
         android:layout_width="225dp"
         android:layout_height="253dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/phone_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_phone_name"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/phone_image" />
+        tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
         android:layout_width="wrap_content"

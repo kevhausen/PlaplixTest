@@ -1,13 +1,14 @@
 package com.example.plaplix.database
 
 import android.content.Context
-import androidx.room.*
-import com.example.plaplix.dataclass.PhoneP
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.example.plaplix.dataclass.PhoneDetail
-import com.example.plaplix.dataclass.PhonePConverter
+import com.example.plaplix.dataclass.PhoneP
 
 @Database(entities = [PhoneP::class, PhoneDetail::class],version = 1)
-@TypeConverters(PhonePConverter::class)
+//@TypeConverters(PhonePConverter::class)
 abstract class PlaplixDB:RoomDatabase() {
         abstract fun daoPlaplix():PlaplixDAO
         companion object{
